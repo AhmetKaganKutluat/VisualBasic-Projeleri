@@ -1,0 +1,1589 @@
+//Str(i)   // i yi stringe çevirdik.
+****************************************
+//programın sağa sola kaymaması ve büyüyüp küçülmemesi için borderstylesini none yapıyoruz.
+****************************************
+//max length max uzunluk 
+//comboyu sıralamak için alfabeye göre style>dropdownlist 2 (en alttaki) ve shortedi true yapıyoruz.
+****************************************
+//For i = 0 To 10 Step 2 '' 2 şer 2 şer arttırdık çiftleri ekledik.
+Combo1.AddItem (i)
+Next i
+****************************************
+// Form2.Text1.BackColor = Color & 251632
+//Form2.Text2.BackColor = Color & 125236        // renk değiştirme olayı. 
+****************************************
+//formun captionunu değiştirme  
+Me.Text = "Ahmet Furkan" & DateTime.Now
+****************************************************************************************************************************
+1.Soru
+//forma tıklandığında en büyük sayıyı veren program
+
+Dim sayi(5) As Integer
+Private Sub Form_Click()
+For i = 1 To 5
+sayi(i) = Val(InputBox(Str(i) + " . sayıyı girin"))
+
+
+Next
+For i = 1 To 5
+For j = 1 To 5
+
+If (sayi(j) > sayi(i)) Then
+gecici = sayi(i)
+
+''5       8      7     3      6
+
+sayi(i) = sayi(j)
+sayi(j) = gecici
+
+End If
+Next
+Next
+MsgBox ("en büyük sayi = " & sayi(5)) '' sayinin 5. indisi en büyük 1. si en küçük
+
+End Sub
+
+
+
+
+
+****************************************************************************************************************************
+2.Soru
+//dosya kontrolü
+//dosyadan okuma ve richtextbox a yazma 
+//richtextboxu aktif etmeden çalışmaz.
+
+
+Private Sub Command1_Click()
+
+yukle = MsgBox("SİSTEM KAYITLI BİLGİLERİ TEXT DOSYASINDAN ALINSINMI ?", 4 + 48, "DOSYA YÜKLEME")
+If (yukle = 6) Then
+RichTextBox1.LoadFile ("bilgiler.txt") ''dosyayı çekmek için
+End If
+End Sub
+
+Private Sub Form_Load()
+dosya = Dir("bilgiler.txt") ''var olup olmamasını kontrol eden komut "Dir"
+If Len(dosya) = 0 Then ''bu dosya yoksa
+MsgBox ("Proje klasörüde bilgiler.txt dosyası yoktur .")
+soru = MsgBox("bilgiler.txt dosyası yaratılsınmı", 4 + 32, "dosya yaratma işlemi")
+If (soru = 6) Then
+Open "bilgiler.txt" For Output As #1 '' birinci dosya oluşturmak için #1
+Close #1
+MsgBox ("bilgiler.txt adında dosya oluşturuldu")
+End If
+Else
+MsgBox ("Proje klasörüde bilgiler.txt dosyası vardır .")
+End If
+End Sub
+
+
+****************************************************************************************************************************
+3.Soru
+//boyutsuz dizi 
+//sonradan değer verilen dizi
+//girilen sayıların toplamını ve ortalamasını alan program.
+//kaç sayı girişi yapılcak 
+
+
+Dim kac As Integer
+Dim sayilar() As Integer '' boyutsuz dizi tanımladık
+
+Private Sub Command1_Click()
+kac = Val(InputBox("Kaç Tane Sayı Girilsin ? ")) ''dizi kaç çekmeceli olsun diye sorduk.
+ReDim sayilar(kac) As Integer  ''diziye değer verdik
+
+
+For i = 1 To kac '' girilen sayıya kadar değerleri aldık
+sayilar(i) = Val(InputBox(i & " . Sayiyi giriniz ", "SAYI GİRİŞİ")) '' VAL YERİNE CİNT GİREBİLİRZ ÇÜMKÜ INPUTBOX STRİNG BİR DEĞERDİR
+topla = topla + sayilar(i) '' toplamını aldık
+Next i
+ortalama = topla / kac  '' ortalamasını bulduk
+MsgBox ("TOPLAM : " & topla & Chr(13) & "ORTALAMA  " & ortalama)
+
+End Sub
+
+
+
+
+
+****************************************************************************************************************************
+4.Soru
+//popup menu 
+//sağ tıklama olayı
+//listeye sağ tıklamayla açılan popup
+
+
+
+//forma sağ tıklayarak menu enitörü açıp menuyu oluşturuyoruz, yukarı ekleyip isimlendiriyoruz (çünkü popup ta verdiğin isim kullanılacak)
+
+
+Private Sub List1_MouseDown(Button As Integer, Shift As Integer, X As Single, Y As Single)'' list1 e sağ tıklanırsa
+''sağ tuşla popap eklmek için burası kullanılr.
+If Button = vbRightButton Then ''farenizdeki sağ tuş tıklanmış ise vbRightButton yerine "2"de yazılabilir
+PopupMenu mnformat  '' mnformat ismini verdiğimiz yer açılır not:içi dolu olması lazım çünkü iç taraf gozukuyor iz burda içine göster ekledik.
+End If
+End Sub
+
+Private Sub mngöster_Click() '' eklediğimiz alt buton göstere tıkladık (verdiğimiz isimle geliyor)
+MsgBox ("Adam Otu") 
+End Sub
+
+
+
+
+****************************************************************************************************************************
+5.Soru
+
+//procedure ve function örnek
+//faktöriyel 
+//public değişken tanımlama 
+//heryerde kullanılan değişken tanımlama
+
+
+
+//procedure ile faktöriyel bulma ve 2. forma yazma.
+
+
+
+
+Dim sayi As Integer
+Public fakt As Integer
+
+
+Sub faktoriyel()  ''procedure
+sayi = Val(InputBox("Sayiyi girin = ", "Faktöriyel"))
+          
+For i = 1 To sayi
+fakt = fakt * i
+Next i
+Form2.Label1.Caption = "Sayinin faktoriyeli=" & fakt  '' form 2 labele yazma
+Form2.Caption = "Faktoriyel = " & fakt  
+Form2.Show  '' form 2 yi göster demek yanında 1 olursa 1. forma kapanmadan geri dönmez.
+Unload Me  '' beni kapat demek
+
+
+End Sub
+Private Sub Command1_Click()
+fakt = 1
+faktoriyel
+         
+End Sub
+
+
+
+
+
+
+//function ile faktöriyel bulma ve 2. forma yazma.
+
+
+
+
+Dim sayi As Integer
+Public fakt As Integer
+Function faktoriyel(sayi)
+For i = 1 To sayi
+fakt = fakt * i
+Next i
+Form2.Caption = "Faktoriyel=" & fakt
+Form2.Label1.Caption = "Sayinin faktoriyeli = " & fakt
+Form2.Show
+Unload Me
+
+End Function
+
+Private Sub Command1_Click()
+fakt = 1
+sayi = Val(InputBox("Sayiyi girin = ", "Faktöriyel"))
+faktoriyel (sayi)
+
+End Sub
+
+
+
+
+****************************************************************************************************************************
+6.Soru
+
+//switch case örneği
+
+
+Dim sayi As Variant
+Private Sub Command1_Click()
+sayi = Text1.Text
+
+
+Select Case sayi
+Case 1: MsgBox ("PAZARTESİ")
+Case 2: MsgBox ("SALI")
+Case 3: MsgBox ("ÇARŞAMBA")
+Case 4: MsgBox ("PERŞEMBE")
+Case 5: MsgBox ("CUMA")
+Case 6: MsgBox ("CUMARTESİ")
+Case 7: MsgBox ("PAZAR")
+Case "Manisa": MsgBox ("Manisa")
+Case Else
+MsgBox ("tanımsız  tuşlama  ")
+Text1.Text = ""
+End Select
+
+End Sub
+
+
+
+****************************************************************************************************************************
+7.Soru
+//Mod alma
+//check kutusu 
+//Comboya ekleme
+//durak belirleme ( goto )
+
+
+
+Dim adet As Integer
+
+Private Sub Check1_Click() '' checkin clickine yazıyoruz.
+If (Check1.Value = vbChecked) Then  ''check 1 seçiliyse bunları yap dedik
+Check2.Value = False
+Check3.Value = False
+End If
+End Sub
+
+Private Sub Check2_Click()
+If (Check2.Value = vbChecked) Then
+Check1.Value = False
+Check3.Value = False
+End If
+End Sub
+
+Private Sub Check3_Click()
+If (Check3.Value = vbChecked) Then
+Check1.Value = False
+Check2.Value = False
+End If
+End Sub
+
+Private Sub Command1_Click()
+Combo1.Clear
+a:
+If (Check3.Value = vbChecked) Then   
+For i = 1 To 30
+Combo1.AddItem (i)
+If (i = 10) Then             '' 1 den 30 a 10 a gelene kadar ekliyoruz 10 olunca programı bitiriyoruz.
+MsgBox ("10 eklenemez")
+Exit Sub
+GoTo a
+End If
+Next i
+End If
+
+
+If (Check2.Value = vbChecked) Then  
+For i = 1 To 30
+If (i Mod 2 = 0) Then        '' 1 den 30 a kadar kaç sayı 2 ye tam bölünüyorsa adete ekleyip sayıyoruz.
+adet = adet + 1
+End If
+Next i
+Combo1.AddItem (adet & " çift sayi var.")
+
+End If
+
+If (Check1.Value = vbChecked) Then
+For i = 1 To 30
+If (i Mod 3 = 0) Then       '' 1 den 30 a 3 e tam bölünenleri yazıyoruz.
+Combo1.AddItem (i)
+End If
+Next i
+End If
+
+End Sub
+
+
+Private Sub Command2_Click()
+cik = MsgBox("program kapatılsın mı ", 4 + 32 + 256, "çıkış")
+If (cik = 6) Then
+
+End ''çıkma kodu
+
+End If '' if sonu
+
+If (cik = 7) Then ''hayır denirse
+Form2.Show 1
+End If
+End Sub
+
+Private Sub Form_Load()
+For i = 1 To 30
+List1.AddItem (i)
+Next i
+End Sub
+
+
+
+****************************************************************************************************************************
+8.Soru
+// listbox gizleme ve listbox sıra verme.
+// girilen sayıların toplam ve ortalamasını alan ve gizli listboxa sırasıyla yazan program.
+
+
+
+
+
+Dim sıra As Integer
+Dim gsayi() As Integer
+
+Private Sub Command1_Click()
+Dim soru, sayı, ortalama, toplam As Integer
+Dim adı, soyad As String
+
+adı = InputBox("ADINIZI GİRİNİZ")
+soyad = InputBox("SOYADINIZ GİRİNİZ")
+sayı = InputBox("KAÇ TANE SAYI GİRİLCEK")
+ReDim gsayı(sayı) As Integer
+For i = 1 To sayı Step 1 '' buradaki step kaçar kaçar arttırılacağını söyler
+gsayı(i) = InputBox(i & "SAYIYI GİRİNİZ")
+toplam = toplam + gsayı(i)
+Next i
+ortalama = toplam / sayı
+soru = MsgBox("kayıt yapılsınmı", 4 + 32, "kayıt")
+If (soru = 6) Then
+List1.Visible = True                              '' görünürlüğünü başta false yapıyoruz progarmın içinde true yapıyoruz.  --- ÖNEMLİ BİLGİ
+List1.AddItem (liststr & sıra & " ADINIZ " & adı & " SOYADI  " & soyad & " ORTALAMASI " & ortalama)
+sıra = sıra + 1 '' sırayı başta loadda tanıttık şimdi 1 arttırıyoruz sıra tutuyoruz.
+Else
+End If
+End Sub
+
+Private Sub Form_Load()
+sıra = 1
+End Sub
+
+
+
+****************************************************************************************************************************
+9.Soru
+
+//hesap makinesi //mutlak alma
+//for ile inputbox sayi isteme
+
+Dim secim As String
+Dim sayi(2) As Double
+Dim toplam, çikarma, carpma, bölme
+
+Private Sub Command1_Click()
+secim = InputBox(" +  -  *  /  bunlardan birini seçin", "Lütfen Seçiniz", " girin.. ")
+For i = 1 To 2
+sayi(i) = Val(InputBox(i & " . Sayiyi giriniz ", "SAYI GİRİŞİ")) '' VAL YERİNE CİNT GİREBİLİRZ ÇÜNKÜ INPUTBOX STRİNG BİR DEĞERDİR
+Next i
+toplam = sayi(1) + sayi(2)
+çikarma = sayi(1) - sayi(2)
+carpma = sayi(1) * sayi(2)
+bölme = sayi(1) / sayi(2)
+If (toplam < 0) Then
+toplam = toplam * -1
+End If
+If (çikarma < 0) Then
+çikarma = çikarma * -1
+End If
+If (carpma < 0) Then
+carpma = carpma * -1
+End If
+If (bölme < 0) Then
+bölme = bölme * -1
+End If
+
+
+
+
+Select Case secim
+Case "+": MsgBox ("sayıların toplamı = " & toplam)
+Case "-": MsgBox ("sayıların farkı   = " & çikarma)
+Case "*": MsgBox ("sayıların çarpımı = " & carpma)
+Case "/": MsgBox ("sayıların bölümü  = " & bölme)
+Case Else
+MsgBox ("tanımsız  tuşlama  ")
+
+End Select
+End Sub
+
+Private Sub Form_Load()
+Form1.Caption = "Hesap Makinesi"
+
+End Sub
+
+
+****************************************************************************************************************************
+10.Soru
+// do loop while yapısı ile faktöriyel hesaplama ve do loop while kullanımı
+
+Dim sayi, i As Integer
+Public fakt As Integer
+Private Sub Command1_Click()
+sayi = InputBox("Faktöriyeli buluncak sayı giriniz.", "Faktöriyel")
+i = 1
+fakt = 1
+
+Do   '' yapmaya başla
+i = i + 1
+fakt = fakt * i
+Loop While i < sayi  '' bu şart sağlandığı sürece
+''MsgBox ("Faktöriyel = " & fakt & " i =" & i)
+Form2.Text1.Text = "Sayının Faktöriyeli = " & fakt
+Form2.Show 1
+
+End Sub
+
+
+
+
+****************************************************************************************************************************
+11.Soru
+
+// text aralarında enter ile geçiş yapma 
+// text e sadece karakter girme 
+// type kullanımı
+// modül kullanımı 
+
+
+modül içine type tanımlama 
+
+
+
+
+Type ogrenci
+ADI As String * 10  '' 10 basamaklı demek galiba
+SOYADI As String * 10
+ADRES As String * 20
+End Type
+
+Global ogr As ogrenci  '' global değişkene ogrenciyi attık ve program içinde kullanımı aşağıda mevcut.
+
+
+
+
+Programın içinde 
+
+
+
+Private Sub Command1_Click()
+ogr.ADI = Trim(UCase(Text1.Text))
+ogr.SOYADI = Trim(UCase(Text2.Text))
+ogr.ADRES = Trim(UCase(Text3.Text))
+Form2.Text1.Text = ogr.ADI + " " + ogr.SOYADI + " " + ogr.ADRES
+Form2.Show 1
+End Sub
+
+Private Sub Text1_KeyPress(KeyAscii As Integer) '' tuşa basıldığında
+If (KeyAscii = 13) Then  ''enter tuşuna basıldığında (13 ascii de enter demek)
+Text2.SetFocus ''text2 ye focusla imleci
+Exit Sub
+End If
+If (KeyAscii <> 8) Then   
+If (KeyAscii < Asc("a")) Or (KeyAscii > Asc("z")) Then '' sadece silme tuşu ve harfler çalışır onun doşında giriş yapılırsa yok say demek
+If (KeyAscii < Asc("A")) Or (KeyAscii > Asc("Z")) Then
+KeyAscii = 0
+End If
+End If
+End If
+End Sub
+
+
+Private Sub Text2_KeyPress(KeyAscii As Integer)
+If (KeyAscii = 13) Then
+Text3.SetFocus
+Exit Sub
+End If
+If (KeyAscii <> 8) Then
+If (KeyAscii < Asc("a")) Or (KeyAscii > Asc("z")) Then
+If (KeyAscii < Asc("A")) Or (KeyAscii > Asc("Z")) Then
+KeyAscii = 0
+End If
+End If
+End If
+End Sub
+
+
+Private Sub Text3_KeyPress(KeyAscii As Integer)
+If (KeyAscii = 13) Then
+Text1.SetFocus
+Exit Sub
+End If
+If (KeyAscii <> 8) Then
+If (KeyAscii < Asc("a")) Or (KeyAscii > Asc("z")) Then
+If (KeyAscii < Asc("A")) Or (KeyAscii > Asc("Z")) Then
+KeyAscii = 0
+End If
+End If
+End If
+End Sub
+
+
+****************************************************************************************************************************
+12.Soru
+// fibonanci( fibonacci ) serisi örneği ,fibonanci serisi
+// text kutusuna yan yana yazma
+// liste kutusuna alt alta yazma 
+// forma yazma
+// procedure ile fibonacci serisi,fibonanci 
+// procedureyi function gibi kullanma
+// procedureye değer yollama, procedure değer
+
+Dim x, y, z, sayi As Integer
+
+Sub fibonacciform(sayi) ''procedure
+x = 0
+y = 1
+Print (" ")
+''Print (x & " ")
+Print (y)
+
+
+
+For i = 0 To sayi - 2 Step 1
+z = x + y
+Print (" " & z)
+
+x = y
+y = z
+Next i
+
+End Sub
+
+Sub fibonaccitext(sayi) ''procedure
+x = 0
+y = 1
+Text1.Text = (" ")
+''text1.text = (x & " ")
+Text1.Text = (y)
+
+
+For i = 0 To sayi - 2 Step 1
+z = x + y
+Text1.Text = Text1.Text & (" " & z)
+
+x = y
+y = z
+Next i
+
+End Sub
+
+Sub fibonacciliste(sayi) ''procedure
+x = 0
+y = 1
+List1.Clear
+''List1.AddItem (x & " ")
+List1.AddItem (y & " ")
+
+
+For i = 0 To sayi - 2 Step 1
+z = x + y
+List1.AddItem (z)
+x = y
+y = z
+Next i
+
+End Sub
+
+
+Private Sub Command1_Click()
+sayi = InputBox("Lütfen Adım Sayısını Girin", "Adım Sayısı")
+fibonacciliste (sayi)
+fibonaccitext (sayi)
+fibonacciform (sayi)
+
+
+End Sub
+
+
+****************************************************************************************************************************
+13.Soru
+//faktöriyel bulma
+// text e sadece sayı girişi yapılması
+// function ile faktöriyel hesaplama
+// procedure ile toplam bulma
+
+
+
+Dim sayi As Integer
+Dim fakt As Integer
+Dim toplam As Integer
+
+Function hesapla(sayi)
+          
+          fakt = 1
+          For i = 1 To sayi
+          fakt = fakt * i
+          Next i
+          
+
+
+
+End Function
+
+Sub kendinekadar(sayi) ''procedure
+
+For i = 1 To sayi
+         toplam = toplam + i
+          Next i
+
+
+End Sub
+
+Private Sub Command1_Click()
+sayi = Text1.Text
+If (sayi > 10) Or (sayi < 1) Then
+MsgBox ("Sayi 1 ile 10 arasında olmalıdır.")
+Text1.Text = " "
+Exit Sub        '' bunu koyarsan diğer işlemleri yapmaz programı burda durdurur.
+End If
+hesapla (sayi)
+kendinekadar (sayi)
+
+MsgBox ("Sayinin faktöriyeli =" & fakt & Chr(13) & "Sayilarin toplami = " & toplam)
+
+
+
+
+End Sub
+
+
+Private Sub Text1_KeyPress(KeyAscii As Integer)  '' sadece sayı girişi ve silme tuşu çalışır.
+If KeyAscii <> 8 Then
+If (KeyAscii < 48 Or KeyAscii > 58) Then
+KeyAscii = 0
+End If
+End If
+End Sub
+
+
+****************************************************************************************************************************
+14.Soru
+
+//Çarpım Tablosu 
+//combo seçilen texte göre işlem
+//forma yazma ve formu temizleme 
+
+
+Private Sub Combo1_Click()
+Cls    '' formu temizlemek için (forma yazıyoruz o sebepten)
+If (Combo1.Text = "0") Then
+Print ("0 a bastın")
+End If
+
+
+
+If (Combo1.Text = "2") Then
+
+Print (1 * 2)
+Print (2 * 2)
+Print (3 * 2)
+Print (4 * 2)
+Print (5 * 2)
+Print (6 * 2)
+Print (7 * 2)
+Print (8 * 2)
+Print (9 * 2)
+Print (10 * 2)
+End If
+
+If (Combo1.Text = "4") Then
+
+Print (1 * 4)
+Print (2 * 4)
+Print (3 * 4)
+Print (4 * 4)
+Print (5 * 4)
+Print (6 * 4)
+Print (7 * 4)
+Print (8 * 4)
+Print (9 * 4)
+Print (10 * 4)
+End If
+
+
+If (Combo1.Text = "6") Then
+
+Print (1 * 6)
+Print (2 * 6)
+Print (3 * 6)
+Print (4 * 6)
+Print (5 * 6)
+Print (6 * 6)
+Print (7 * 6)
+Print (8 * 6)
+Print (9 * 6)
+Print (10 * 6)
+End If
+
+
+If (Combo1.Text = "8") Then
+
+Print (1 * 8)
+Print (2 * 8)
+Print (3 * 8)
+Print (4 * 8)
+Print (5 * 8)
+Print (6 * 8)
+Print (7 * 8)
+Print (8 * 8)
+Print (9 * 8)
+Print (10 * 8)
+End If
+
+
+If (Combo1.Text = "10") Then
+
+Print (1 * 10)
+Print (2 * 10)
+Print (3 * 10)
+Print (4 * 10)
+Print (5 * 10)
+Print (6 * 10)
+Print (7 * 10)
+Print (8 * 10)
+Print (9 * 10)
+Print (10 * 10)
+End If
+
+End Sub
+
+Private Sub Form_Load()
+For i = 0 To 10 Step 2 '' 2 şer 2 şer arttırdık çiftleri ekledik.
+Combo1.AddItem (i)
+Next i
+
+
+End Sub
+
+
+
+****************************************************************************************************************************
+15.Soru 
+//Kapsamlı Program
+//Harf notu
+//ortalama hesaplama
+//dosyaya yazma 
+//check olayı
+//combo kapsamlı 
+//rastegele şifre oluşturma , random , ID , referans kodu
+// şifre oluşturma functionu 
+// temizleme proceduresi
+//ortalama hesaplama  , vize %20, final %30 vs gibi 
+//form 2 açıksa butonu enabled= false yapma olayı 
+
+
+
+
+
+
+
+Dim vize, final, ödev, evize, efinal, eödev, ortalama As Double
+Dim ID, ad, soyad, ders, hoca, bölüm, durum, sinif, harfnotu As String
+
+
+Function turet()
+Dim sifre As String ''text kutusuna aktarılan şifremdir
+Dim karakterler(25) ''kaç tane karakter varsa o kdr ekle
+karakterler(0) = "A"
+karakterler(1) = "B"
+karakterler(2) = "T"
+karakterler(3) = "6"
+karakterler(4) = "8"
+karakterler(5) = "{"
+karakterler(6) = "S"
+karakterler(7) = "F"
+karakterler(8) = "7"
+karakterler(9) = "+"
+karakterler(10) = "P"
+karakterler(11) = "?"
+karakterler(12) = "M"
+karakterler(13) = "m"
+karakterler(14) = "r"
+karakterler(15) = "H"
+karakterler(16) = "w"
+karakterler(17) = "X"
+karakterler(18) = "/"
+karakterler(19) = "*"
+karakterler(20) = "#"
+karakterler(21) = "&"
+karakterler(22) = "t"
+karakterler(23) = "7"
+karakterler(24) = "j"
+karakterler(25) = "H"
+For i = 1 To 5 '' 8 basamalklı şifre
+Randomize
+sifre = sifre & karakterler(Int(Rnd() * 25))
+Next i
+turet = sifre
+End Function
+
+Sub temizle()
+Text1.Text = turet()
+List1.Clear
+Text1.Text = ""
+Text2.Text = ""
+Text3.Text = ""
+Text4.Text = ""
+Text5.Text = ""
+Text6.Text = ""
+Combo1.Clear
+Combo2.Clear
+Combo3.Clear
+Check1.Value = False
+Check2.Value = False
+Check3.Value = False
+
+End Sub
+
+
+
+
+Private Sub Check1_Click()
+If (Check1.Value = vbChecked) Then
+Check2.Value = False
+Check3.Value = False
+End If
+End Sub
+
+Private Sub Check2_Click()
+If (Check2.Value = vbChecked) Then
+Check1.Value = False
+Check3.Value = False
+End If
+End Sub
+
+Private Sub Check3_Click()
+If (Check3.Value = vbChecked) Then
+Check2.Value = False
+Check1.Value = False
+End If
+End Sub
+
+Private Sub Combo1_Click()
+If (Combo1.ListIndex = 0) Then
+Combo2.Clear
+Combo2.AddItem ("Selam")
+Combo2.AddItem ("Mehmet")
+Combo2.AddItem ("Fatih")
+End If
+
+If (Combo1.ListIndex = 1) Then ''listındex yerine text yazıp 1 yerine "AKDENİZ BÖLGESİ DE YAZILABİLİRDİ"
+Combo2.Clear
+Combo2.AddItem ("Banu")
+Combo2.AddItem ("Ajdar")
+Combo2.AddItem ("Adnan Şenses")
+End If
+End Sub
+
+
+Private Sub Combo2_Click()
+If (Combo2.Text = "Selam") Then
+Combo3.AddItem ("Donanım")
+Combo3.AddItem ("Yazılım")
+End If
+
+If (Combo2.Text = "Mehmet") Then
+Combo3.AddItem ("Grafik")
+Combo3.AddItem ("Html")
+End If
+
+If (Combo2.Text = "Fatih") Then
+Combo3.AddItem ("CSS")
+Combo3.AddItem ("Java")
+End If
+
+If (Combo2.Text = "Banu") Then
+Combo3.AddItem ("Müzik")
+Combo3.AddItem ("Beden")
+End If
+
+If (Combo2.Text = "Ajdar") Then
+Combo3.AddItem ("Matematik")
+Combo3.AddItem ("Coğrafya")
+End If
+
+If (Combo2.Text = "Adnan Şenses") Then
+Combo3.AddItem ("Harita")
+Combo3.AddItem ("İklim")
+End If
+
+End Sub
+
+Private Sub Command1_Click()
+Text1.Text = turet()
+End Sub
+
+
+Private Sub Command2_Click()
+If (Text2.Text = "") Then
+MsgBox ("lütfen adı kısmını doldurunuz .")
+Exit Sub
+End If
+If (Text3.Text = "") Then
+MsgBox ("lütfen soyadı kısmını doldurunuz .")
+Exit Sub
+End If
+If (Text4.Text = "") And (Text4.Text < 0) Or (Text4.Text > 100) Then
+MsgBox ("Vize kısmını doldurunuz veya 0 ile 100 arası sayı giriniz.")
+Exit Sub
+End If
+If (Text5.Text = "") And (Text5.Text < 0) Or (Text5.Text > 100) Then
+MsgBox ("Final kısmını doldurunuz veya 0 ile 100 arası sayı giriniz.")
+Exit Sub
+End If
+If (Text6.Text = "") And (Text6.Text < 0) Or (Text6.Text > 100) Then
+MsgBox ("lütfen ödev kısmını doldurunuz veya 0 ile 100 arası sayı giriniz.")
+Exit Sub
+End If
+
+ ID = Text1.Text
+ ad = Text2.Text
+ soyad = Text3.Text
+ vize = Text4.Text
+ evize = vize
+ vize = vize / 100 * 30
+ final = Text5.Text
+ efinal = final
+ final = final / 100 * 50
+ ödev = Text6.Text
+ eödev = ödev
+ ödev = ödev / 100 * 20
+ bölüm = Combo1.Text
+ hoca = Combo2.Text
+ ders = Combo3.Text
+ If (Check1.Value = vbChecked) Then
+sinif = "Tekrar"
+End If
+If (Check2.Value = vbChecked) Then
+sinif = "1.Sınıf"
+End If
+If (Check3.Value = vbChecked) Then
+sinif = "2.Sınıf"
+End If
+
+
+ortalama = vize + final + ödev
+If (ortalama >= 50) Then
+durum = "SINIFI GEÇTİ"
+End If
+If (ortalama < 50) Then
+durum = "SINIFTA KALDI"
+End If
+If (ortalama >= 0) And (ortalama <= 35) Then
+harfnotu = "FF"
+End If
+
+If (ortalama >= 36) And (ortalama <= 49) Then
+harfnotu = "DC"
+End If
+If (ortalama >= 50) And (ortalama <= 64) Then
+harfnotu = "CC"
+End If
+If (ortalama >= 65) And (ortalama <= 74) Then
+harfnotu = "BC"
+End If
+If (ortalama >= 75) And (ortalama <= 90) Then
+harfnotu = "BA"
+End If
+If (ortalama >= 91) And (ortalama <= 10) Then
+harfnotu = "AA"
+End If
+
+
+cik = MsgBox("Hesaplama Gerçekleşsin mi ? ", 4 + 32 + 256, "Hesapla")
+If (cik = 6) Then
+List1.AddItem ("ID =" & ID & " " & "AD =" & ad & " " & "SOYAD =" & soyad & " " & "Vize =" & evize)
+''List1.AddItem ("AD =" & ad)
+''List1.AddItem ("SOYAD =" & soyad)
+''List1.AddItem ("Vize =" & evize)
+List1.AddItem ("Final =" & efinal & " " & "Ödev =" & eödev & " " & "Ortalama" & ortalama & " " & "Durum" & durum & " " & "Harf Not =" & harfnotu & " ")
+''List1.AddItem ("Ödev =" & eödev)
+''List1.AddItem ("Ortalama" & ortalama)
+''List1.AddItem ("Durum" & durum)
+''List1.AddItem ("Harf Not =" & harfnotu)
+List1.AddItem ("Bölüm =" & bölüm & " " & "Öğretim Elemanı =" & hoca & " " & "Ders =" & ders & " " & "Sınıf =" & sinif)
+''List1.AddItem ("Öğretim Elemanı =" & hoca)
+''List1.AddItem ("Ders =" & ders)
+''List1.AddItem ("Sınıf =" & sinif)
+soru = MsgBox("Yedek.txt Dosyasına Kayıt Yapılsın mı ? ", 4 + 32 + 256, "Kayıt")
+If (soru = 6) Then
+''kayıt yapma kodları
+
+
+Open "yedek.txt" For Append As #1 '' append doysya kayıt yapar.
+
+
+Print #1, ID, ad, soyad, ders, hoca, bölüm, durum, sinif, harfnotu, evize, efinal, eödev, ortalama '' yazdırmak dosyaya
+Close #1
+MsgBox ("dosyaya başarılı bir şekilde kayıt yapılmıştır.")
+temizle
+End If ''soru eveti endi
+If (soru = 7) Then
+temizle
+End If ''soru hayır edi
+
+End If '' if sonu
+If (cik = 7) Then
+
+End If ''hayır sonu
+
+
+End Sub
+
+Private Sub Form_Load()
+Combo1.AddItem ("Bilgisayar Bölümü")
+Combo1.AddItem ("Fotoğrafçılık Bölümü")
+Text1.Text = turet()
+Form1.acik = True
+
+
+dosya = Dir("yedek.txt") ''val olup olmamasını kontrol eden komut "Dir"
+If Len(dosya) = 0 Then ''bu dosya yoksa
+MsgBox ("Proje klasörüde yedek.txt dosyası yoktur .")
+soru = MsgBox("yedek.txt dosyası yaratılsınmı", 4 + 32, "dosya yaratma işlemi")
+If (soru = 6) Then
+Open "yedek.txt" For Output As #1 '' birinci dosya oluşturmak için #1
+Close #1
+MsgBox ("yedek.txt adında dosya oluşturuldu")
+End If
+Else
+MsgBox ("Proje klasörüde yedek.txt dosyası vardır .")
+End If
+End Sub
+
+Private Sub Form_Unload(Cancel As Integer)
+Form1.acik = False
+End Sub
+
+
+
+Private Sub Text2_KeyPress(KeyAscii As Integer)
+If (KeyAscii = 13) Then
+Text3.SetFocus
+Exit Sub
+End If
+End Sub
+
+
+
+Private Sub Text3_KeyPress(KeyAscii As Integer)
+If (KeyAscii = 13) Then
+Text2.SetFocus
+Exit Sub
+End If
+End Sub
+
+
+
+Private Sub Text4_KeyPress(KeyAscii As Integer)
+If (KeyAscii <> 8) Then
+If (KeyAscii < Asc("0")) Or (KeyAscii > Asc("9")) Then
+KeyAscii = 0
+End If
+End If
+End Sub
+
+
+
+Private Sub Text5_KeyPress(KeyAscii As Integer)
+If (KeyAscii <> 8) Then
+If (KeyAscii < Asc("0")) Or (KeyAscii > Asc("9")) Then
+KeyAscii = 0
+End If
+End If
+End Sub
+
+
+
+Private Sub Text6_KeyPress(KeyAscii As Integer)
+If (KeyAscii <> 8) Then
+If (KeyAscii < Asc("0")) Or (KeyAscii > Asc("9")) Then
+KeyAscii = 0
+End If
+End If
+End Sub
+
+
+
+
+
+
+ ****************************************************************************************************************************
+16.Soru   /  NTP 12.Soru
+// Anket Programı
+// Foreach ile textbox ve combobox temizleme
+// liste kutusunda seçileni silme 
+// sağ tıklayınca liste kutusundan seçileni silme
+// toplam kayıt sayısı ve seçilenin sıra numarası (listboxta)
+
+
+FORM1  :
+
+
+Public acık As Boolean
+Private Sub Command1_Click()
+Form2.Show 1
+End Sub
+
+Private Sub Timer1_Timer()
+Form1.Caption = "Anket Programı    " & Now
+End Sub
+
+Private Sub Timer2_Timer() ''açık olup olmamasını public değişkende kontrol ettik
+If (acık = True) Then
+Command1.Enabled = False
+End If
+If (acık = False) Then
+Command1.Enabled = True
+End If
+
+End Sub
+
+
+
+FORM2  : 
+
+
+
+Dim durum As Integer
+Dim anketno As Variant
+Dim anketör, soruanket, müşteriad, müşterisoyad, il, ilçe As String
+Sub temizle()
+
+''List1.Clear
+For Each Control In Me.Controls   '' FOREACH DÖNGÜSÜ İLE TÜM COBOLARI VE TEXTLERİ TEMİZLEME
+If TypeName(Control) = "TextBox" Then
+Control.Text = ""
+End If
+Next
+
+For Each Control In Me.Controls
+If TypeName(Control) = "ComboBox" Then
+Control.ListIndex = -1 'or control.clear
+End If
+Next
+
+
+Check1.Value = False
+Check2.Value = False
+Check3.Value = False
+Check4.Value = False
+Check5.Value = False
+Check6.Value = False
+Check7.Value = False
+Check8.Value = False
+Text1.Text = turet()
+
+End Sub
+
+Function turet()
+Dim sifre As String ''text kutusuna aktarılan şifremdir
+Dim karakterler(25) ''kaç tane karakter varsa o kdr ekle
+karakterler(0) = "A"
+karakterler(1) = "B"
+karakterler(2) = "T"
+karakterler(3) = "6"
+karakterler(4) = "8"
+karakterler(5) = "C"
+karakterler(6) = "S"
+karakterler(7) = "F"
+karakterler(8) = "7"
+karakterler(9) = "D"
+karakterler(10) = "P"
+karakterler(11) = "I"
+karakterler(12) = "M"
+karakterler(13) = "Y"
+karakterler(14) = "1"
+karakterler(15) = "H"
+karakterler(16) = "2"
+karakterler(17) = "X"
+karakterler(18) = "3"
+karakterler(19) = "4"
+karakterler(20) = "9"
+karakterler(21) = "W"
+karakterler(22) = "T"
+karakterler(23) = "7"
+karakterler(24) = "J"
+karakterler(25) = "H"
+For i = 1 To 6 ''  basamak sayısı
+Randomize
+sifre = sifre & karakterler(Int(Rnd() * 25))
+Next i
+turet = sifre
+End Function
+''18.47
+
+
+
+
+
+Private Sub Check1_Click()
+If (Check1.Value = vbChecked) Then  ''check 1 seçiliyse bunları yap dedik
+Check2.Value = False
+Check3.Value = False
+Check4.Value = False
+Check5.Value = False
+Check6.Value = False
+Check7.Value = False
+Check8.Value = False
+End If
+End Sub
+
+Private Sub Check2_Click()
+If (Check2.Value = vbChecked) Then  ''check 1 seçiliyse bunları yap dedik
+Check1.Value = False
+Check3.Value = False
+Check4.Value = False
+Check5.Value = False
+Check6.Value = False
+Check7.Value = False
+Check8.Value = False
+End If
+End Sub
+
+Private Sub Check3_Click()
+If (Check3.Value = vbChecked) Then  ''check 1 seçiliyse bunları yap dedik
+Check2.Value = False
+Check1.Value = False
+Check4.Value = False
+Check5.Value = False
+Check6.Value = False
+Check7.Value = False
+Check8.Value = False
+End If
+End Sub
+
+Private Sub Check4_Click()
+If (Check4.Value = vbChecked) Then  ''check 1 seçiliyse bunları yap dedik
+Check2.Value = False
+Check3.Value = False
+Check1.Value = False
+Check5.Value = False
+Check6.Value = False
+Check7.Value = False
+Check8.Value = False
+End If
+End Sub
+
+Private Sub Check5_Click()
+If (Check5.Value = vbChecked) Then  ''check 1 seçiliyse bunları yap dedik
+Check2.Value = False
+Check3.Value = False
+Check4.Value = False
+Check1.Value = False
+Check6.Value = False
+Check7.Value = False
+Check8.Value = False
+End If
+End Sub
+
+Private Sub Check6_Click()
+If (Check6.Value = vbChecked) Then  ''check 1 seçiliyse bunları yap dedik
+Check2.Value = False
+Check3.Value = False
+Check4.Value = False
+Check5.Value = False
+Check1.Value = False
+Check7.Value = False
+Check8.Value = False
+End If
+End Sub
+
+Private Sub Check7_Click()
+If (Check7.Value = vbChecked) Then  ''check 1 seçiliyse bunları yap dedik
+Check2.Value = False
+Check3.Value = False
+Check4.Value = False
+Check5.Value = False
+Check6.Value = False
+Check1.Value = False
+Check8.Value = False
+End If
+End Sub
+
+Private Sub Check8_Click()
+If (Check8.Value = vbChecked) Then  ''check 1 seçiliyse bunları yap dedik
+Check2.Value = False
+Check3.Value = False
+Check4.Value = False
+Check5.Value = False
+Check6.Value = False
+Check7.Value = False
+Check1.Value = False
+End If
+End Sub
+
+Private Sub Combo2_Click()
+Combo3.Clear
+If (Combo2.Text = "Ankara") Then
+Combo3.Clear
+Combo3.AddItem ("Sincan")
+Combo3.AddItem ("Keçiören")
+Combo3.AddItem ("Çankaya")
+End If
+
+If (Combo2.Text = "İstanbul") Then
+Combo3.Clear
+Combo3.AddItem ("Kartal")
+Combo3.AddItem ("Beyoğlu")
+Combo3.AddItem ("Kadıköy")
+End If
+
+If (Combo2.Text = "Antalya") Then
+Combo3.Clear
+Combo3.AddItem ("Serik")
+Combo3.AddItem ("Manavgat")
+Combo3.AddItem ("Titreyengöl")
+End If
+
+
+
+End Sub
+
+Private Sub Command1_Click()
+Text1.Text = turet()
+End Sub
+
+Private Sub Command2_Click()
+
+If (Check1.Value = vbChecked) Then  ''check 1 seçiliyse bunları yap dedik
+durum = 1
+End If
+If (Check2.Value = vbChecked) Then  ''check 1 seçiliyse bunları yap dedik
+durum = 2
+End If
+If (Check3.Value = vbChecked) Then  ''check 1 seçiliyse bunları yap dedik
+durum = 3
+End If
+If (Check4.Value = vbChecked) Then  ''check 1 seçiliyse bunları yap dedik
+durum = 4
+End If
+If (Check5.Value = vbChecked) Then  ''check 1 seçiliyse bunları yap dedik
+durum = 1
+End If
+If (Check6.Value = vbChecked) Then  ''check 1 seçiliyse bunları yap dedik
+durum = 2
+End If
+If (Check7.Value = vbChecked) Then  ''check 1 seçiliyse bunları yap dedik
+durum = 3
+End If
+If (Check8.Value = vbChecked) Then  ''check 1 seçiliyse bunları yap dedik
+durum = 4
+End If
+If (Check8.Value = vbChecked) Or (Check7.Value = vbChecked) Or (Check6.Value = vbChecked) Or (Check5.Value = vbChecked) Then
+
+soruanket = "2. Soru"
+End If
+If (Check1.Value = vbChecked) Or (Check2.Value = vbChecked) Or (Check3.Value = vbChecked) Or (Check4.Value = vbChecked) Then
+
+soruanket = "1. Soru"
+End If
+
+anketno = Text1.Text
+anketör = Combo1.Text
+müşteriad = Text2.Text
+müşterisoyad = Text3.Text
+il = Combo2.Text
+ilçe = Combo3.Text
+
+soru = MsgBox("Bilgiler Kaydedilsin mi ?", 4 + 32, "KAYIT")
+If (soru = 6) Then
+List1.AddItem ("Anket NO = " & anketno & " " & "Anketör = " & anketör & " " & "Müşteri Ad = " & müşteriad & " " & "Müşteri Soyadı = " & müşterisoyad & " " & "İli = " & il & " " & "İlçesi = " & ilçe & " " & "Cevapladığı Soru = " & soruanket & " " & "Katılma Durumu = " & durum)
+temizle
+
+End If '' evetin endi
+      
+If (soru = 7) Then
+
+temizle
+
+End If '' hayırın endi
+
+
+End Sub ''butonun endi
+
+Private Sub Form_Load()
+Form1.acık = True
+Text1.Text = turet()
+Combo1.AddItem ("Mete Han")
+Combo1.AddItem ("Cengiz Han")
+Combo1.AddItem ("Timur Han")
+Combo1.AddItem ("Kürşat Han")
+Combo1.AddItem ("Alparslan Han")
+
+Combo2.AddItem ("Ankara")
+Combo2.AddItem ("İstanbul")
+Combo2.AddItem ("Antalya")
+
+End Sub
+
+Private Sub Form_Unload(Cancel As Integer)
+Form1.acık = False
+End Sub
+
+Private Sub List1_MouseDown(Button As Integer, Shift As Integer, X As Single, Y As Single)  '' mausun sağ tıkı ile popupu açma (forma sağ tıklayıp menu editorden oluşturup isimlendirmen lazım)
+If Button = vbRightButton Then ''farenizdeki sağ tuş tıklanmış ise vbRightButton yerine "2"de yazılabilir
+PopupMenu mnformat  '' mnformat ismini verdiğimiz yer açılır not:içi dolu olması lazım çünkü iç taraf gozukuyor iz burda içine göster ekledik.
+End If
+End Sub
+
+Private Sub mnsil_Click()  '' listedeki seçili şeyi silmeye yarar.
+intX = List1.ListIndex   '' seçili indexi değişkene attık
+List1.RemoveItem (intX)  '' seçili indexi sildik
+
+End Sub
+
+Private Sub Text2_KeyPress(KeyAscii As Integer)
+If (KeyAscii = 13) Then  ''enter tuşuna basıldığında (13 ascii de enter demek)
+Text3.SetFocus
+Exit Sub
+End If
+If (KeyAscii <> 8) Then
+If (KeyAscii < Asc("a")) Or (KeyAscii > Asc("z")) Then '' sadece silme tuşu ve harfler çalışır onun doşında giriş yapılırsa yok say demek
+If (KeyAscii < Asc("A")) Or (KeyAscii > Asc("Z")) Then
+KeyAscii = 0
+End If
+End If
+End If
+End Sub
+
+
+
+Private Sub Text3_KeyPress(KeyAscii As Integer)
+If (KeyAscii = 13) Then  ''enter tuşuna basıldığında (13 ascii de enter demek)
+Text2.SetFocus ''text2 ye focusla imleci
+Exit Sub
+End If
+If (KeyAscii <> 8) Then
+If (KeyAscii < Asc("a")) Or (KeyAscii > Asc("z")) Then '' sadece silme tuşu ve harfler çalışır onun doşında giriş yapılırsa yok say demek
+If (KeyAscii < Asc("A")) Or (KeyAscii > Asc("Z")) Then
+KeyAscii = 0
+End If
+End If
+End If
+End Sub
+
+Private Sub Timer1_Timer()
+Label9.Caption = ("Sisteme Yüklü Kayıt Sayısı = " & List1.ListIndex + 1 & "/" & List1.ListCount) '' KAYIT SAYISI OLAYI
+End Sub
+
+
+
+
+****************************************************************************************************************************
+list1 den list2 ye eleman ekleme 
+// tüm elemanları karşı liste ekleme 
+
+
+
+Private Sub Command1_Click() '' list 1 den seçili olanı list 2 ye ekler.
+ If (List1.ListIndex < 0) Then
+            MsgBox ("Sol Taraftan Seçim Yap Ulan !!!")
+            Exit Sub
+        End If
+        List2.AddItem (List1.Text)
+        List1.RemoveItem (List1.ListIndex)
+        
+End Sub
+
+Private Sub Command2_Click()  ''list 1 boş olana kadar tüm itemleri karşıya ekler
+For i = 0 To List1.ListCount - 1
+ 
+ 
+            List2.AddItem (List1.List(i)) '' c# daki listbox1.items le aynı şey.
+        Next i
+        List1.Clear
+End Sub
+
+
+Private Sub Form_Load()
+ Dim i As Integer 
+        For i = 1 To 5 ''forma veri ekleme
+            List1.AddItem (Choose(i, "GALSAM OTU", "ADAM OTU", "MÜRVER ASA", "GÖRÜNMEZLİK PELERİNİ", "FELSEFE TAŞI"))
+        Next
+End Sub
+
+Private Sub Timer1_Timer()
+If (List1.ListCount < 1) Then '' list 1 de item kalmadıysa 1. butonu pasif eder.
+            Command1.Enabled = False
+        End If
+End Sub
+
+
+
+
+
+****************************************************************************************************************************
+3 haklı şifreli giriş olayı.
+// kullanıcı adı şifre olayı.
+
+Dim sayac As Integer
+Private Sub Command1_Click()
+ If (Text1.Text = "" Or Text2.Text = "") Then
+            MsgBox ("KULLANICI ADI VE ŞİFRE BOŞ BIRAKILAMAZ")
+            Exit Sub
+        End If
+        If (Text1.Text = "AHMET" And Text2.Text = "FURKAN") Then '' kullanıcı adı ve şifre doğruysa form 5 i aç
+
+            Form5.Show 1
+            End
+        Else                   
+            sayac = sayac - 1   '' yanlışsa sayacı 1 düşür ve kalan kakkı yaz
+            MsgBox ("KULLANICI ADI VEYA ŞİFRE YANLIS.." & vbCr & vbCr & _
+                   "Kalan Hakkınız =" & sayac) 'vbcr enter demek   alt cizgide alttan devam etmek için'
+            If (sayac = 0) Then '' hak bittiyse programı kapat
+            MsgBox ("Hakkın bitti.")
+                End
+
+            End If
+        End If
+End Sub
+
+Private Sub Form_Load()
+sayac = 3
+End Sub
+
+
+
+Private Sub Text1_KeyPress(KeyAscii As Integer)  '' entere basınca text2 ye focuslar
+If (KeyAscii = 13) Then  ''enter tuşuna basıldığında (13 ascii de enter demek)
+Text2.SetFocus
+Exit Sub
+End If
+End Sub
+
+
+
+Private Sub Text2_KeyPress(KeyAscii As Integer) '' entere basınca butona focuslar.
+If (KeyAscii = 13) Then  ''enter tuşuna basıldığında (13 ascii de enter demek)
+Command1.SetFocus
+Exit Sub
+End If
+End Sub
+****************************************************************************************************************************
+// progress bar - yükleme ekranı.
+
+
+Private Sub Timer1_Timer()
+vbalProgressBar1.Value = vbalProgressBar1.Value + 2
+
+For i = 0 To vbalProgressBar1.Value
+Label1.Caption = "program yükleniyor   % " & i
+Next i
+
+If (vbalProgressBar1.Value >= 100) Then
+Form2.Show
+
+Timer1.Enabled = False
+vbalProgressBar1.Value = 0
+End If
+End Sub
+
+
+****************************************************************************************************************************
+//form1 e icon ekleme icon yolu 
+
+form 1 e tıkla ordan icon seç
+
+yereldisc C > program files 86 > microsoft visual studio >common >graphics > ıcons     // sende yok

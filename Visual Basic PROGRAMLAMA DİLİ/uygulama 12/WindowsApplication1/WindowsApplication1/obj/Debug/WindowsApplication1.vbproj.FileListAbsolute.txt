@@ -1,0 +1,32 @@
+C:\Users\Ahmet Kağan\Desktop\12.Hafta Visual Basic\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe.config
+C:\Users\Ahmet Kağan\Desktop\12.Hafta Visual Basic\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Form1.resources
+C:\Users\Ahmet Kağan\Desktop\12.Hafta Visual Basic\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Resources.resources
+C:\Users\Ahmet Kağan\Desktop\12.Hafta Visual Basic\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+C:\Users\Ahmet Kağan\Desktop\12.Hafta Visual Basic\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+C:\Users\Ahmet Kağan\Desktop\12.Hafta Visual Basic\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+C:\Users\Ahmet Kağan\Desktop\12.Hafta Visual Basic\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+C:\Users\Ahmet Kağan\Desktop\12.Hafta Visual Basic\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.exe
+C:\Users\Ahmet Kağan\Desktop\12.Hafta Visual Basic\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.xml
+C:\Users\Ahmet Kağan\Desktop\12.Hafta Visual Basic\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.pdb
+C:\Users\Ahmet Kağan\Desktop\12.Hafta Visual Basic\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Form2.resources
+C:\Users\Ahmet Kağan\Desktop\12.Hafta Visual Basic\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Form3.resources
+C:\Users\Ahmet Kağan\Desktop\12.Hafta Visual Basic\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Form4.resources
+C:\Users\Ahmet Kağan\Desktop\12.Hafta Visual Basic\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Form5.resources
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\Uygulamalar\uygulama 12\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe.config
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\Uygulamalar\uygulama 12\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.exe
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\Uygulamalar\uygulama 12\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.xml
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\Uygulamalar\uygulama 12\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.pdb
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\Uygulamalar\uygulama 12\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\Uygulamalar\uygulama 12\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\Uygulamalar\uygulama 12\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\Uygulamalar\uygulama 12\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Form1.resources
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\Uygulamalar\uygulama 12\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Form2.resources
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\Uygulamalar\uygulama 12\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Form3.resources
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\Uygulamalar\uygulama 12\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Form4.resources
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\Uygulamalar\uygulama 12\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Form5.resources
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\Uygulamalar\uygulama 12\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Resources.resources
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\Uygulamalar\uygulama 12\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\uygulama 12\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe.config
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\uygulama 12\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.exe
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\uygulama 12\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.xml
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\uygulama 12\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.pdb

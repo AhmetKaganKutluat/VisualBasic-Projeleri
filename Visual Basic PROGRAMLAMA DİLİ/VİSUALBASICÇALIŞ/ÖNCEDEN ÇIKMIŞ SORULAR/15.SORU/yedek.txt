@@ -1,0 +1,3 @@
+ID            ÝSÝM          SOYAD         DERS         HOCA               BÖLÜM                    DURUM         SINIF       HARF          VÝZE          FÝNAL         ÖDEV
+
+&*rj*         Ahmet         Kagan         Coðrafya      Ajdar         Fotoðrafçýlýk Bölümü        SINIFI GEÇTÝ  2.Sýnýf       CC            28            70            60             55,4 

@@ -1,0 +1,28 @@
+þifre olayý =
+(
+form1 eklenir border sytle none yapýlýr 
+form1 eklenir center screen olarak ekranýn ortasýna alýnýr.
+border sytle white yapýlýr.
+picture box eklenir choose image , sonra import seçilir.
+enter komutuyla geçiþ için textbox1 in events olayýndan keypreese girip içine kod yazýyorusz
+
+)
+
+yükleme alaný =
+(
+
+form 2 border sytle none ekranýn ortasýnda 
+form2 ye toolbax tan progres , label ve timer ekledik ekledik
+timerýn enabled true ve ýntervalýný 150 yaptýk
+)
+
+MDI form alaný =
+(
+form3 windowsstate maximized seçtik 
+form3 formborder style fixed tool windows yaptýk
+ýsmdisontainer = true yaptýk
+form3 baþýðý için timer ekledik interval 1 yaptýk . enabled true 
+form3  e statusstrip ekledik
+status özelliklerinden itemsten veri ekle
+ 
+)

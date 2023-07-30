@@ -1,0 +1,21 @@
+c:\users\mehmet\Desktop\uygulamavb2\uygulamavb2\bin\Debug\uygulamavb2.exe.config
+c:\users\mehmet\Desktop\uygulamavb2\uygulamavb2\bin\Debug\uygulamavb2.exe
+c:\users\mehmet\Desktop\uygulamavb2\uygulamavb2\bin\Debug\uygulamavb2.pdb
+c:\users\mehmet\Desktop\uygulamavb2\uygulamavb2\bin\Debug\uygulamavb2.xml
+c:\users\mehmet\Desktop\uygulamavb2\uygulamavb2\obj\Debug\uygulamavb2.Form1.resources
+c:\users\mehmet\Desktop\uygulamavb2\uygulamavb2\obj\Debug\uygulamavb2.Resources.resources
+c:\users\mehmet\Desktop\uygulamavb2\uygulamavb2\obj\Debug\uygulamavb2.vbproj.GenerateResource.Cache
+c:\users\mehmet\Desktop\uygulamavb2\uygulamavb2\obj\Debug\uygulamavb2.exe
+c:\users\mehmet\Desktop\uygulamavb2\uygulamavb2\obj\Debug\uygulamavb2.xml
+c:\users\mehmet\Desktop\uygulamavb2\uygulamavb2\obj\Debug\uygulamavb2.pdb
+c:\users\mehmet\Desktop\uygulamavb2\uygulamavb2\obj\Debug\uygulamavb2.Form2.resources
+c:\users\mehmet\Desktop\uygulamavb2\uygulamavb2\obj\Debug\uygulamavb2.Form3.resources
+c:\users\mehmet\Desktop\uygulamavb2\uygulamavb2\obj\Debug\uygulamavb2.Form4.resources
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\Uygulamalar\VİSUALBASICÇALIŞ\VİSUAL STUDİO DA YAPILMIŞ HALİ\2.hafta\uygulamavb2\bin\Debug\uygulamavb2.exe.config
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\Uygulamalar\VİSUALBASICÇALIŞ\VİSUAL STUDİO DA YAPILMIŞ HALİ\2.hafta\uygulamavb2\obj\Debug\uygulamavb2.exe
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\Uygulamalar\VİSUALBASICÇALIŞ\VİSUAL STUDİO DA YAPILMIŞ HALİ\2.hafta\uygulamavb2\obj\Debug\uygulamavb2.xml
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\Uygulamalar\VİSUALBASICÇALIŞ\VİSUAL STUDİO DA YAPILMIŞ HALİ\2.hafta\uygulamavb2\obj\Debug\uygulamavb2.pdb
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\2.hafta\uygulamavb2\bin\Debug\uygulamavb2.exe.config
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\2.hafta\uygulamavb2\obj\Debug\uygulamavb2.exe
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\2.hafta\uygulamavb2\obj\Debug\uygulamavb2.xml
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\2.hafta\uygulamavb2\obj\Debug\uygulamavb2.pdb

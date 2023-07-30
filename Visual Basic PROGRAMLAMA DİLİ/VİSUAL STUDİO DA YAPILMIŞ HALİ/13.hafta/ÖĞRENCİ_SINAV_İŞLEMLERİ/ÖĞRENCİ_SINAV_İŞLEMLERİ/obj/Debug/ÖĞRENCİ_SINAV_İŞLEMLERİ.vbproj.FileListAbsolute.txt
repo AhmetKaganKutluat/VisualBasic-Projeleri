@@ -1,0 +1,20 @@
+c:\users\mehmet\Desktop\ÖĞRENCİ_SINAV_İŞLEMLERİ\ÖĞRENCİ_SINAV_İŞLEMLERİ\bin\Debug\ÖĞRENCİ_SINAV_İŞLEMLERİ.exe.config
+c:\users\mehmet\Desktop\ÖĞRENCİ_SINAV_İŞLEMLERİ\ÖĞRENCİ_SINAV_İŞLEMLERİ\bin\Debug\ÖĞRENCİ_SINAV_İŞLEMLERİ.exe
+c:\users\mehmet\Desktop\ÖĞRENCİ_SINAV_İŞLEMLERİ\ÖĞRENCİ_SINAV_İŞLEMLERİ\bin\Debug\ÖĞRENCİ_SINAV_İŞLEMLERİ.pdb
+c:\users\mehmet\Desktop\ÖĞRENCİ_SINAV_İŞLEMLERİ\ÖĞRENCİ_SINAV_İŞLEMLERİ\bin\Debug\ÖĞRENCİ_SINAV_İŞLEMLERİ.xml
+c:\users\mehmet\Desktop\ÖĞRENCİ_SINAV_İŞLEMLERİ\ÖĞRENCİ_SINAV_İŞLEMLERİ\obj\Debug\ÖĞRENCİ_SINAV_İŞLEMLERİ.Form1.resources
+c:\users\mehmet\Desktop\ÖĞRENCİ_SINAV_İŞLEMLERİ\ÖĞRENCİ_SINAV_İŞLEMLERİ\obj\Debug\ÖĞRENCİ_SINAV_İŞLEMLERİ.Resources.resources
+c:\users\mehmet\Desktop\ÖĞRENCİ_SINAV_İŞLEMLERİ\ÖĞRENCİ_SINAV_İŞLEMLERİ\obj\Debug\ÖĞRENCİ_SINAV_İŞLEMLERİ.vbproj.GenerateResource.Cache
+c:\users\mehmet\Desktop\ÖĞRENCİ_SINAV_İŞLEMLERİ\ÖĞRENCİ_SINAV_İŞLEMLERİ\obj\Debug\ÖĞRENCİ_SINAV_İŞLEMLERİ.exe
+c:\users\mehmet\Desktop\ÖĞRENCİ_SINAV_İŞLEMLERİ\ÖĞRENCİ_SINAV_İŞLEMLERİ\obj\Debug\ÖĞRENCİ_SINAV_İŞLEMLERİ.xml
+c:\users\mehmet\Desktop\ÖĞRENCİ_SINAV_İŞLEMLERİ\ÖĞRENCİ_SINAV_İŞLEMLERİ\obj\Debug\ÖĞRENCİ_SINAV_İŞLEMLERİ.pdb
+C:\Users\MEHMET\Desktop\ÖĞRENCİ_SINAV_İŞLEMLERİ\ÖĞRENCİ_SINAV_İŞLEMLERİ\obj\Debug\ÖĞRENCİ_SINAV_İŞLEMLERİ.Form2.resources
+C:\Users\MEHMET\Desktop\ÖĞRENCİ_SINAV_İŞLEMLERİ\ÖĞRENCİ_SINAV_İŞLEMLERİ\obj\Debug\ÖĞRENCİ_SINAV_İŞLEMLERİ.Form3.resources
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\Uygulamalar\VİSUALBASICÇALIŞ\VİSUAL STUDİO DA YAPILMIŞ HALİ\13.hafta\ÖĞRENCİ_SINAV_İŞLEMLERİ\ÖĞRENCİ_SINAV_İŞLEMLERİ\bin\Debug\ÖĞRENCİ_SINAV_İŞLEMLERİ.exe.config
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\Uygulamalar\VİSUALBASICÇALIŞ\VİSUAL STUDİO DA YAPILMIŞ HALİ\13.hafta\ÖĞRENCİ_SINAV_İŞLEMLERİ\ÖĞRENCİ_SINAV_İŞLEMLERİ\obj\Debug\ÖĞRENCİ_SINAV_İŞLEMLERİ.exe
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\Uygulamalar\VİSUALBASICÇALIŞ\VİSUAL STUDİO DA YAPILMIŞ HALİ\13.hafta\ÖĞRENCİ_SINAV_İŞLEMLERİ\ÖĞRENCİ_SINAV_İŞLEMLERİ\obj\Debug\ÖĞRENCİ_SINAV_İŞLEMLERİ.xml
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\Uygulamalar\VİSUALBASICÇALIŞ\VİSUAL STUDİO DA YAPILMIŞ HALİ\13.hafta\ÖĞRENCİ_SINAV_İŞLEMLERİ\ÖĞRENCİ_SINAV_İŞLEMLERİ\obj\Debug\ÖĞRENCİ_SINAV_İŞLEMLERİ.pdb
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\13.hafta\ÖĞRENCİ_SINAV_İŞLEMLERİ\ÖĞRENCİ_SINAV_İŞLEMLERİ\bin\Debug\ÖĞRENCİ_SINAV_İŞLEMLERİ.exe.config
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\13.hafta\ÖĞRENCİ_SINAV_İŞLEMLERİ\ÖĞRENCİ_SINAV_İŞLEMLERİ\obj\Debug\ÖĞRENCİ_SINAV_İŞLEMLERİ.exe
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\13.hafta\ÖĞRENCİ_SINAV_İŞLEMLERİ\ÖĞRENCİ_SINAV_İŞLEMLERİ\obj\Debug\ÖĞRENCİ_SINAV_İŞLEMLERİ.xml
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\13.hafta\ÖĞRENCİ_SINAV_İŞLEMLERİ\ÖĞRENCİ_SINAV_İŞLEMLERİ\obj\Debug\ÖĞRENCİ_SINAV_İŞLEMLERİ.pdb

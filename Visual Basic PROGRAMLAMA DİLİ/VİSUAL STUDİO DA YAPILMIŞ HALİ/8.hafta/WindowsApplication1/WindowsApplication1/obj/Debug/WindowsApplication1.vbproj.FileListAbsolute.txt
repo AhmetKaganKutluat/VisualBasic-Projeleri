@@ -1,0 +1,36 @@
+C:\Users\Ahmet Kağan\Desktop\visual studio vb uygulamaları\8\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe.config
+C:\Users\Ahmet Kağan\Desktop\visual studio vb uygulamaları\8\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Form1.resources
+C:\Users\Ahmet Kağan\Desktop\visual studio vb uygulamaları\8\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Resources.resources
+C:\Users\Ahmet Kağan\Desktop\visual studio vb uygulamaları\8\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+C:\Users\Ahmet Kağan\Desktop\visual studio vb uygulamaları\8\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Form2.resources
+C:\Users\Ahmet Kağan\Desktop\visual studio vb uygulamaları\8\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+C:\Users\Ahmet Kağan\Desktop\visual studio vb uygulamaları\8\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+C:\Users\Ahmet Kağan\Desktop\visual studio vb uygulamaları\8\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+C:\Users\Ahmet Kağan\Desktop\visual studio vb uygulamaları\8\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.exe
+C:\Users\Ahmet Kağan\Desktop\visual studio vb uygulamaları\8\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.xml
+C:\Users\Ahmet Kağan\Desktop\visual studio vb uygulamaları\8\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.pdb
+C:\Users\Ahmet Kağan\Desktop\visual studio vb uygulamaları\8\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Form3.resources
+C:\Users\MEHMET\Desktop\ödev-20192805047-furkanzekigerdan\8.hafta\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe.config
+C:\Users\MEHMET\Desktop\ödev-20192805047-furkanzekigerdan\8.hafta\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.exe
+C:\Users\MEHMET\Desktop\ödev-20192805047-furkanzekigerdan\8.hafta\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.xml
+C:\Users\MEHMET\Desktop\ödev-20192805047-furkanzekigerdan\8.hafta\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.pdb
+C:\Users\MEHMET\Desktop\ödev-20192805047-furkanzekigerdan\8.hafta\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+C:\Users\MEHMET\Desktop\ödev-20192805047-furkanzekigerdan\8.hafta\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+C:\Users\MEHMET\Desktop\ödev-20192805047-furkanzekigerdan\8.hafta\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+C:\Users\MEHMET\Desktop\ödev-20192805047-furkanzekigerdan\8.hafta\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Form1.resources
+C:\Users\MEHMET\Desktop\ödev-20192805047-furkanzekigerdan\8.hafta\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Form2.resources
+C:\Users\MEHMET\Desktop\ödev-20192805047-furkanzekigerdan\8.hafta\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Form3.resources
+C:\Users\MEHMET\Desktop\ödev-20192805047-furkanzekigerdan\8.hafta\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Resources.resources
+C:\Users\MEHMET\Desktop\ödev-20192805047-furkanzekigerdan\8.hafta\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\8.hafta\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe.config
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\8.hafta\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.exe
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\8.hafta\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.xml
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\8.hafta\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.pdb
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\8.hafta\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\8.hafta\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\8.hafta\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\8.hafta\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Form1.resources
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\8.hafta\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Form2.resources
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\8.hafta\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Form3.resources
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\8.hafta\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Resources.resources
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\8.hafta\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.vbproj.GenerateResource.Cache

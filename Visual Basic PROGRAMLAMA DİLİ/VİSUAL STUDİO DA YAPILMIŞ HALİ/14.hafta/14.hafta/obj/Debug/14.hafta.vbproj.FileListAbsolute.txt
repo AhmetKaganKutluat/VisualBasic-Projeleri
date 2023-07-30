@@ -1,0 +1,20 @@
+c:\users\mehmet\Desktop\14.hafta\14.hafta\bin\Debug\14.hafta.exe.config
+c:\users\mehmet\Desktop\14.hafta\14.hafta\bin\Debug\14.hafta.exe
+c:\users\mehmet\Desktop\14.hafta\14.hafta\bin\Debug\14.hafta.pdb
+c:\users\mehmet\Desktop\14.hafta\14.hafta\bin\Debug\14.hafta.xml
+c:\users\mehmet\Desktop\14.hafta\14.hafta\obj\Debug\_14.hafta.Resources.resources
+c:\users\mehmet\Desktop\14.hafta\14.hafta\obj\Debug\14.hafta.vbproj.GenerateResource.Cache
+c:\users\mehmet\Desktop\14.hafta\14.hafta\obj\Debug\14.hafta.exe
+c:\users\mehmet\Desktop\14.hafta\14.hafta\obj\Debug\14.hafta.xml
+c:\users\mehmet\Desktop\14.hafta\14.hafta\obj\Debug\14.hafta.pdb
+c:\users\mehmet\Desktop\14.hafta\14.hafta\obj\Debug\_14.hafta.Form1.resources
+c:\users\mehmet\Desktop\14.hafta\14.hafta\obj\Debug\_14.hafta.Form2.resources
+c:\users\mehmet\Desktop\14.hafta\14.hafta\obj\Debug\_14.hafta.Form3.resources
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\Uygulamalar\VİSUALBASICÇALIŞ\VİSUAL STUDİO DA YAPILMIŞ HALİ\14.hafta\14.hafta\bin\Debug\14.hafta.exe.config
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\Uygulamalar\VİSUALBASICÇALIŞ\VİSUAL STUDİO DA YAPILMIŞ HALİ\14.hafta\14.hafta\obj\Debug\14.hafta.exe
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\Uygulamalar\VİSUALBASICÇALIŞ\VİSUAL STUDİO DA YAPILMIŞ HALİ\14.hafta\14.hafta\obj\Debug\14.hafta.xml
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\Uygulamalar\VİSUALBASICÇALIŞ\VİSUAL STUDİO DA YAPILMIŞ HALİ\14.hafta\14.hafta\obj\Debug\14.hafta.pdb
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\14.hafta\14.hafta\bin\Debug\14.hafta.exe.config
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\14.hafta\14.hafta\obj\Debug\14.hafta.exe
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\14.hafta\14.hafta\obj\Debug\14.hafta.xml
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\14.hafta\14.hafta\obj\Debug\14.hafta.pdb

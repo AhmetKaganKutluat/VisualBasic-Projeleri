@@ -1,0 +1,17 @@
+c:\users\mehmet\Desktop\uygulamavb4\uygulamavb4\bin\Debug\uygulamavb4.exe.config
+c:\users\mehmet\Desktop\uygulamavb4\uygulamavb4\bin\Debug\uygulamavb4.exe
+c:\users\mehmet\Desktop\uygulamavb4\uygulamavb4\bin\Debug\uygulamavb4.pdb
+c:\users\mehmet\Desktop\uygulamavb4\uygulamavb4\bin\Debug\uygulamavb4.xml
+c:\users\mehmet\Desktop\uygulamavb4\uygulamavb4\obj\Debug\uygulamavb4.Form1.resources
+c:\users\mehmet\Desktop\uygulamavb4\uygulamavb4\obj\Debug\uygulamavb4.Resources.resources
+c:\users\mehmet\Desktop\uygulamavb4\uygulamavb4\obj\Debug\uygulamavb4.vbproj.GenerateResource.Cache
+c:\users\mehmet\Desktop\uygulamavb4\uygulamavb4\obj\Debug\uygulamavb4.exe
+c:\users\mehmet\Desktop\uygulamavb4\uygulamavb4\obj\Debug\uygulamavb4.xml
+c:\users\mehmet\Desktop\uygulamavb4\uygulamavb4\obj\Debug\uygulamavb4.pdb
+c:\users\mehmet\Desktop\uygulamavb4\uygulamavb4\obj\Debug\uygulamavb4.Form2.resources
+c:\users\mehmet\Desktop\uygulamavb4\uygulamavb4\obj\Debug\uygulamavb4.Form3.resources
+c:\users\mehmet\Desktop\uygulamavb4\uygulamavb4\obj\Debug\uygulamavb4.Form4.resources
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\4.hafta\uygulamavb4\bin\Debug\uygulamavb4.exe.config
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\4.hafta\uygulamavb4\obj\Debug\uygulamavb4.exe
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\4.hafta\uygulamavb4\obj\Debug\uygulamavb4.xml
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\4.hafta\uygulamavb4\obj\Debug\uygulamavb4.pdb

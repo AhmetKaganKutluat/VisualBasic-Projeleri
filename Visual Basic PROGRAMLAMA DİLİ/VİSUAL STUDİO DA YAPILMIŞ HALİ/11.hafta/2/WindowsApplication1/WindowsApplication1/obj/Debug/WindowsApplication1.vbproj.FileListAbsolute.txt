@@ -1,0 +1,11 @@
+C:\Users\Ahmet Kağan\Desktop\visual studio vb uygulamaları\11\2\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe.config
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\11.hafta\2\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe.config
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\11.hafta\2\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\11.hafta\2\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\11.hafta\2\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\11.hafta\2\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Form1.resources
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\11.hafta\2\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Resources.resources
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\11.hafta\2\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\11.hafta\2\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.exe
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\11.hafta\2\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.xml
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\11.hafta\2\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.pdb

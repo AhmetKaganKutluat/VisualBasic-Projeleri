@@ -1,0 +1,587 @@
+((STRÝNG DEÐER ATAMA  ,, TEXTE METÝN EKLEME ,,  FORM AÇMA ,,  YAZDIRMA ))
+
+Dim metin As String                          '' metin adýnda string deðer
+Private Sub Command1_Click()        
+
+metin = Trim(UCase(Text1.Text))        ''deðeri textten alýcak büyük harfe çeviricek boþluklarý almýcak
+Form2.Show                                             ''form iki açma
+Form2.Label1.Caption = metin              ''form2 deki label 1 e yazdýrma
+
+End Sub
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+((ÝKÝ SAYI TOPLATIM YAZDIRMA ))
+
+Dim s1, s2, sonuc As Integer                                    '' 1.0sayi , 2.sayi ve sonuc deðiþkeni atadýk integer olarak 
+Private Sub Command1_Click()    
+s1 = CInt(Text1.Text)                                                    ''sayýsal ifadeye çevirmek için cint kullanýlýr. texten deðerler alýndý
+s2 = CInt(Text2.Text)                                                    ''sayýsal ifadeye çevirmek için cint kullanýlýr. texten deðerler alýndý.
+sonuc = s1 + s2                                                                ''sonuc deðiþkeninde toplattýk
+Label1.Caption = "sayýlarýn toplamý :" & sonuc        ''metin ve sayýlarda & iaþreti stringlerde + birþeþtirir.
+End Sub
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+((KARE VE DÝKDÖRTGEN ALAN , CEVRE HESABI))
+
+Dim ukenar, kkenar, alan, cevre As Integer                ''genele  bunlarý hesaplamamýz için integer deðiþkenler atadýk.
+Private Sub Command1_Click()
+ukenar = Text1.Text                                                           ''uzun kenarý text1.text ten alýcak
+kkenar = Text2.Text                                                           ''kýsa kenarý text2.text ten alýcak
+alan = 4 * ukenar                                                            '' kare alan hesaplama
+cevre = 4 * ukenar                                                             ''kare cevre hesaplama 
+List1.AddItem ("kare alan " & alan)                                 ''list1 e alan yazdýrma ekleme 
+List1.AddItem ("kare cevre " & cevre)                             '' list1 e cevre yazdýrma ekleme
+End Sub
+
+Private Sub Command2_Click()
+ukenar = Text1.Text                                                                                    ''uzun kenarý text1.text ten alýcak                                                         
+kkenar = Text2.Text                                                                                  ''uzun kenarý text1.text ten alýcak
+alan = ukenar * kkenar                                                                             ""dikdörtgen alan hesaplama
+cevre = ((2 * ukenar) + (2 * kkenar))                                                       ''dikdörtgen cevre hesaplama 
+List1.AddItem ("dikdortgen alan " & alan)                                             ''list1 e alan yazdýrma ekleme 
+List1.AddItem ("dikdörtgen cevre " & cevre)                                          '' list1e cevre yazdýrma ekleme
+End Sub
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+((TEXT BOÞ MU DOLU MU KONTROL ET MESEJ OLARAK UYAR , COMBOBOX VERÝ EKLEME  ))
+
+Private Sub Command2_Click()
+Form2.Show 1                                                                                              '' form2 ye geçiþ  kodu 1 koyarsak arkadaki forma geçmeyi engeller .                                     
+
+End Sub
+*****************************************************************************
+Private Sub Form_Load()
+(1.YÖNTEM)
+Combo1.AddItem ("selam kaçmaz")                                                          '' comboya veri ekleme
+Combo1.AddItem ("mustafa")
+Combo1.AddItem ("derya")
+Combo1.AddItem ("hasan")
+Combo1.AddItem ("furkan")
+
+End Sub
+
+****************************************************************************
+Private Sub Form_Load()
+( 2. YÖNTEM )
+For i = 1 To 5
+Combo1.AddItem Choose(i, "nesne programlam", "görsel programlama", "mat", "tarih", "beden")                       ''combo veri ekleme
+Next i ''for sonu
+
+End Sub
+
+****************************************************************************
+(1.YÖNTEM)
+If (Trim(Text1.Text) = " ") Then                                                              '' trimi alýnmýþ text deki deðer boþsa                      
+MsgBox ("LÜTFEN MÜÞTERÝNÝN ADINI YAZINIZ")                          '' ekrana mesaj ver 
+Exit Sub                                                                                                     '' döngüyü bitir
+End If                                                                                                           
+
+If (Trim(Text2.Text) = " ") Then              
+MsgBox ("LÜTFEN MÜÞTERÝNÝN SOYADINI YAZINIZ")
+Exit Sub
+End If
+ 
+If (Combo1.Text = " ") Then                                                                '' combodaki text boþsa
+MsgBox ("lütfen bir isim seçiniz")                                                    '' ekrana mesaj
+Exit Sub                                                                                                    '' ' döngüyü bitir
+End If
+End Sub
+
+(2.YÖNTEM)
+If (Trim(Text1.Text) = "") Then
+MsgBox ("LÜTFEN MÜÞTERÝNÝN ADINI YAZINIZ")
+Else
+If (Trim(Text2.Text) = "") Then
+MsgBox ("LÜTFEN MÜÞTERÝNÝN SOYADINI YAZINIZ" )
+Else
+If (Combo1.Text = "") Then
+MsgBox ("lütfen bir isim seçiniz")
+Else
+MsgBox ("naber lan")
+End If
+End If
+End If
+End Sub
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+((FORM KAPATMA))
+
+(1.YÖNTEM)
+Private Sub Command1_Click()
+
+cik = MsgBox("program kapatýlsýn mý ", 4 + 32 + 256, "çýkýþ")                           ''çýk diye bir deðiþken atadýk ekrana evet hayýr bir komut geldi 
+If (cik = 6) Then                                                                                                        '' eðer evet seçilirse.
+
+End                                                                                                                            ''end çýkma kodu   TÜM PROJEYÝ KAPATIR.
+End If  
+
+End Sub
+
+Private Sub Command1_Click()
+
+cik = MsgBox("program kapatýlsýn mý ", 4 + 32 + 256, "çýkýþ")                           ''çýk diye bir deðiþken atadýk ekrana evet hayýr bir komut geldi 
+If (cik = 6) Then                                                                                                        '' eðer evet seçilirse.
+
+Unload me                                                                                                                          ''unluad me çýkma kodu   Çalýþan projeyi kapatýr.
+End If  
+
+End Sub
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+((BUTTON AKTÝFLÝK DURUMU , SEÇÝLENÝ LÝSTBOXTAN 2.LÝSTBOXA EKLEME , TÝMERLA BAÞLIK TARÝH YAZDIRMA , LABEL SEÇÝLEN / ADET YAZDIRMA ))
+
+Private Sub Form_Load()       
+List1.AddItem ("NESNE TABANLI PROGRAMLA")                                                           '' list 1 e elemanlarý ekleme
+List1.AddItem ("GÖRSEL  PROGRAMLA")
+List1.AddItem ("MAT")
+List1.AddItem ("TARÝH")
+List1.AddItem ("BEDEN")
+End Sub
+
+*****************************************************************************
+
+Private Sub List1_Click()
+Label1.Caption = ("DURUM" & List1.ListIndex + 1 & " / " & List1.ListCount)                          ''list 1 deki elemanlara týklayýnca index numarasýa göre kaçýncý eleman oldguunu gösterme .
+End Sub
+
+****************************************************************************************
+
+Private Sub Timer1_Timer()
+Form3.Caption = ("GÖRSEL PROGRAMLAMA 1 " & Now)                                                           ''timera formun baþlýðýna anýn tarihini saatin yazdýrma
+End Sub                 
+
+*****************************************************************************************
+
+Private Sub Timer2_Timer()
+If (List1.ListCount = 0) Then                                                                                                          '' listboxta eleman kalmamýssa buttonu enabled özelliðini false et
+Command1.Enabled = False
+End If
+End Sub
+
+****************************************************************************************
+
+Private Sub Command1_Click()                                                                                                            ''seçileni ekle butonu
+If (List1.ListIndex < 0) Then                                                                                                                '' eðer list index elemaný 0 dan küçükse yaný seçilmediyse 
+MsgBox ("eklenecek ders adý seçilmedi lütfen seçiniz")                                                                  ''mesaj ver
+Exit Sub
+End If
+
+List2.AddItem List1.Text                                                                                                                    ''list 2 ye list1 deki texti yaz
+List1.RemoveItem (List1.ListIndex)                                                                                                 '' seçileni atar.
+
+
+End Sub
+
+***********************************************************************************************************************
+
+
+
+Private Sub Command2_Click()                          '' tümünü ekle butonu
+For i = 0 To List1.ListCount                                    '' 0 dan listin tüm elemanýna kadar
+List2.AddItem List1.List(i)                                    '' list 2 ye list birdeki elemanlarý teker teker ekle 
+Next i                             
+List1.Clear                                                                  " list 1 temizle 
+Label1.Caption = " "                                                  " label 1 captionunu boþalt
+Command2.Enabled = False                                     "butonu pasif yap
+End Sub
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+((SINIF GEÇTÝ KALDI OLAYI ,  KEYPRESS ÖZELLÝKLERÝ ))
+
+Private Sub Text1_KeyPress(KeyAscii As Integer)
+If (KeyAscii <> 8) Then
+If (KeyAscii < Asc("0")) Or (KeyAscii > Asc("9")) Then                                              " harf girilmez sadece yazý
+KeyAscii = 0
+End If
+End If
+End Sub
+
+**************************************************************************
+
+Private Sub Text2_KeyPress(KeyAscii As Integer)
+If (KeyAscii <> 8) Then
+If (KeyAscii < Asc("a")) Or (KeyAscii > Asc("z")) Then
+If (KeyAscii < Asc("A")) Or (KeyAscii > Asc("Z")) Then                                                  " rakam girilmez sadece harf 
+KeyAscii = 0
+End If
+End If
+End If
+End Sub
+
+********************************************************************************
+
+Dim isim As String                        " sting isim deðeri
+Dim sayi As Integer                       " integer sayi deðeri
+
+Private Sub Command1_Click()
+sayi = Text1.Text                                                                      " sayi  deki deðeri text1 den alýr
+isim = Text2.Text                                                                      " isim   deki deðeri text2 den alýr   
+If (sayi < 50) Then                                                                      " girdiðiniz sayi 50 den küçükse
+Label1.Caption = isim & " " & "SINIFTA KALDI"                      "" label 1 in captiona  durumu yazdýrýr
+Else                                                                                                  "" girdiðinz sayý 50 den küçük deðilse
+Label1.Caption = isim & " " & "SINIFI GEÇTÝ"                              "" sýnýfý geçti 
+End If
+End Sub
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+((CASE OLAYI , INPUT BOX  , GOTO GÝT KOMUTU ))
+
+Dim secim As Variant    ''variant genel deðiþken demek
+Dim ad, soyad, adres As String
+Dim gelir, gider, fark As Integer
+
+Private Sub Command1_Click()
+If (Text1.Text = "") Then
+MsgBox ("lütfen adý kýsmýný doldurunuz .")
+Exit Sub
+End If
+If (Text2.Text = "") Then
+MsgBox ("lütfen soyadý kýsmýný doldurunuz .")
+Exit Sub
+End If
+If (Text3.Text = "") Then
+MsgBox ("gelir kýsmýný doldurunuz.")
+Exit Sub
+End If
+If (Text4.Text = "") Then
+MsgBox ("gider kýsmýný doldurunuz.")
+Exit Sub
+End If
+If (Text5.Text = "") Then
+MsgBox ("lütfen adres kýsmýný doldurunuz .")
+Exit Sub
+End If
+git:
+secim = InputBox("LÜTFEN AÞAÐIDAKÝ SEÇÝMLERDEN BÝRÝNÝ YAPINIZ", "Lütfen Seçiniz", " 1 - 9 , HESAPLA ,5,S ")
+secim = UCase(Trim(secim)) ''büyük harfe çevirmek için
+
+Select Case secim
+Case 1 To 9: MsgBox ("görsel programlama")
+GoTo git
+Case S: End
+Case "5": MsgBox ("SELAM KACMAZ " & vbCr & "MANAVGAT MYO")
+Case "HESAPLA":
+ad = Trim(UCase(Text1))
+soyad = Trim(UCase(Text2))
+gelir = CInt(Text3)  ''cint ordaki deðeri sayýsala dök ifadesidir.
+gider = CInt(Text4)
+adres = Trim(UCase(Text5))
+fark = gelir - gider
+fark = fark * -1
+MsgBox (ad & " " & soyad & fark & " tl maaþlý " & vbCr & adres & "adresinde yaþamaktadýr.")
+GoTo git
+Case Else
+MsgBox ("tanýmsýz  tuþlama  ")
+Text1.Text = ""
+Text2.Text = ""
+Text3.Text = ""
+Text4.Text = ""
+Text5.Text = ""
+End Select
+End Sub
+
+Private Sub Text3_KeyPress(KeyAscii As Integer)
+
+If (KeyAscii = 13) Then
+Text4.SetFocus
+Exit Sub
+End If
+
+
+
+If KeyAscii <> 8 Then
+If (KeyAscii < 48 Or KeyAscii > 58) Then
+KeyAscii = 0
+End If
+End If
+End Sub
+
+
+
+Private Sub Text4_KeyPress(KeyAscii As Integer)
+If KeyAscii <> 8 Then
+If (KeyAscii < 48 Or KeyAscii > 58) Then
+KeyAscii = 0
+End If
+End If
+End Sub
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+((INPUT BOX ÖRNEÐÝ , FORM LOADA TOPLAMA ORTALAMA YAPMA , TÝMERA BAÞLIK ÞUANKÝ ZAMAN EKLEME))
+
+Dim sayilar(5) As Integer
+Private Sub Form_Load()
+For i = 1 To 5
+sayilar(i) = Val(InputBox(i & " . Sayiyi giriniz ", "SAYI GÝRÝÞÝ"))           '' VAL YERÝNE CÝNT GÝREBÝLÝRZ ÇÜMKÜ INPUTBOX STRÝNG BÝR DEÐERDÝR
+topla = topla + sayilar(i)                                                                              " girilen tüm sayýlar toplanýr
+Next i
+ortalama = topla / 5
+Label1.Caption = ("TOPLAM : " & topla & " ORTALAMA  " & ortalama)                              ''label1 captionuna yazdýrma
+End Sub
+
+Private Sub Timer1_Timer()
+Form2.Caption = ("DÝZÝLÝ INPUTBOX ÝÞLEM ÖRNEKLEK UYGULAMASI " & Now)                                   "" þuanki tarih zamaný yazdýrma 
+End Sub
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+((FUNCTÝON OLAYLARI ))
+
+(ALAN ÇEVRE HESAPLAMA)
+Function hesapla(a, b)                                                       "" function ismi ve deðerler 
+alan = a * b
+cevre = 2 * (a + b)
+hesapla = ("ALAN:" & alan & "ÇEVRE :" & cevre)                            "" ekrena yazdýracaðýmz                       
+End Function
+
+Private Sub Command1_Click()
+a = Val(Text1.Text)                                                                          "" val alýnmý a deðeri text 1 den
+b = Val(Text2.Text)                                                                          "" val alýnmýþ b deðeri text2 den
+Label1.Caption = hesapla(a, b)                                                "" label 1 captiona function ismimizi koyduk
+Text1.Text = ""                                                                              "" textboxlarý temizledi
+Text2.Text = ""                                                                               "" textboxlarý temizledi 
+
+**************************************************************************************************
+
+(KUVVET ALMA)
+Function kuvvet(sayi, us)
+kuvvet = 1
+For i = 1 To us
+kuvvet = kuvvet * sayi
+Next i
+End Function
+
+Private Sub Command2_Click()
+On Error Resume Next ''hata varsa sýradakine geç
+sayi = InputBox("TABAN SAYÝSÝNÝ GÝRÝNÝZ  :", "SAYI GÝRÝÞÝ")
+us = InputBox("ÜST KUVVETÝNÝ GÝRÝNÝZ  :", "SAYI GÝRÝÞÝ")
+MsgBox ("SAYININ KUVVETÝ  : " & kuvvet(sayi, us))
+
+
+End Sub
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+((FÝBONACCÝ HESAPLAMA ))
+
+Dim fibo(500) As Integer
+Sub hesap(sayi) ''procedure
+fibo(1) = 1
+For i = 2 To sayi
+fibo(i) = fibo(i - 1) + fibo(i - 2)
+Next i
+For i = 1 To sayi
+List1.AddItem (i & ".  fibo sayýsý : " & fibo(i))
+Next i
+End Sub
+
+Private Sub Command1_Click()
+List1.Clear
+sayi = Val(InputBox("KAÇ TANE FÝBO SAYISI GÖSTERÝLSÝN ", "FÝBO SERÝSÝ"))
+hesap (sayi)
+End Sub
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+((MODUL UYGULAMASI , TEXTBOXTA))
+
+Private Sub Command1_Click()
+goster
+End Sub
+
+Sub goster()
+MsgBox Form1.Text1.Text                             '' modulde yapýp buttonda tanýmladýk
+End Sub
+
+**************************************************************************************
+((MODULE UYGULAMASI TOPLAMA))
+
+Private Sub Command2_Click()
+toplama
+End Sub
+
+Sub toplama()
+Dim sayi1, sayi2, sonuc As Integer
+sayi1 = Val(Form1.Text2.Text)
+sayi2 = Val(Form1.Text3.Text)
+sonuc = sayi1 + sayi2
+MsgBox ("SAYILARIN TOPLAMI  :" & Str(sonuc)) ''str yazdanda olur ama + koymak lazým yazmasanda
+''+ metinsel tipteki ifadelri birleþtirmek için ama & her deðerde kullanýlýr
+End Sub
+
+
+*********************************************************************************************
+
+((TYPE MODAL ))
+
+Global ogr As ogrenci                                                       "" global isim de ogr deðiþkeni atadýk
+Type ogrenci
+ADI As String * 10
+SOYADI As String * 10                                                           "" type tanýmladýk
+ADRES As String * 20
+End Type
+
+
+
+Private Sub Command1_Click()
+ogr.ADI = Trim(UCase(Text1.Text))
+ogr.SOYADI = Trim(UCase(Text2.Text))                                                  ""buttonda uygulattýk
+ogr.ADRES = Trim(UCase(Text3.Text))
+
+Label1.Caption = "ÖÐRENCÝNÝN ADI : " & ogr.ADI
+Label2.Caption = "ÖÐRENCÝNÝN SOYADI : " & ogr.SOYADI
+Label3.Caption = "ÖÐRENCÝNÝN ADRES : " & ogr.ADRES
+
+End Sub
+
+
+***************************************************************************************************
+((TYPE MODAL))
+
+Public bilgi As bilgiler
+Type bilgiler
+ADI As String
+SOYADI As String
+ADRES As String
+End Type
+
+Private Sub Command1_Click()
+bilgi.ADI = Trim(UCase(Text1.Text))
+bilgi.SOYADI = Trim(UCase(Text2.Text))
+bilgi.ADRES = Trim(UCase(Text3.Text))
+
+Form4.Text1.Text = (bilgi.ADI + " " + bilgi.SOYADI + " " + bilgi.ADRES)
+Form4.Show
+End Sub
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+((BÝLGÝLERÝ TXT YÜKLEME , DOSYA OLUÞTURMA ,VARLIK KONTROL ETME !!!!))
+
+Dim soru As String '' bilgiler.txt ile ilgili dosyalar
+Dim dosya As String '' bilgiler.txt ile ilgili dosyalar
+
+(dosya varýlýk kontrol ve oluþruma)
+Private Sub Form_Load()
+dosya = Dir("bilgiler.txt")                                                                        ''val olup olmamasýný kontrol eden komut "Dir"
+If Len(dosya) = 0 Then                                                                                                ''bu dosya yoksa
+MsgBox ("Proje klasörüde bilgiler.txt dosyasý yoktur .")
+soru = MsgBox("bilgiler.txt dosyasý yaratýlsýnmý", 4 + 32, "dosya yaratma iþlemi")
+If (soru = 6) Then
+Open "bilgiler.txt" For Output As #1                                                                              '' birinci dosya oluþturmak için #1                                 
+Close #1
+MsgBox ("bilgiler.txt adýnda dosya oluþturuldu")
+End If
+Else
+MsgBox ("Proje klasörüde bilgiler.txt dosyasý vardýr .")
+End If
+End Sub
+
+
+Private Sub Command1_Click()
+Open "bilgiler.txt" For Append As #1                                    '' append doysya kayýt yapar.
+ADI = Trim(UCase(Text1.Text))
+SOYADI = Trim(UCase(Text2.Text))
+ADRES = Trim(UCase(RichTextBox1.Text))
+Print #1, ADI, SOYADI, ADRES '' yazdýrmak dosyaya
+Close #1
+MsgBox ("dosyaya baþarýlý bir þekilde kayýt yapýlmýþtýr.")
+Text1.Text = ""
+Text2.Text = ""
+RichTextBox1.Text = ""
+End Sub
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+((ÞÝFRE TÜRETME FUNCTÝONLA ))
+
+Function turet()
+Dim sifre As String                          ''text kutusuna aktarýlan þifremdir
+Dim karakterler(25)                       ''kaç tane karakter varsa o kdr ekle
+karakterler(0) = "A"
+karakterler(1) = "B"
+karakterler(2) = "T"
+karakterler(3) = "6"
+karakterler(4) = "8"
+karakterler(5) = "{"
+karakterler(6) = "S"
+karakterler(7) = "F"
+karakterler(8) = "7"
+karakterler(9) = "+"
+karakterler(10) = "P"
+karakterler(11) = "?"
+karakterler(12) = "M"
+karakterler(13) = "m"
+karakterler(14) = "r"
+karakterler(15) = "H"
+karakterler(16) = "w"
+karakterler(17) = "X"
+karakterler(18) = "/"
+karakterler(19) = "*"
+karakterler(20) = "#"
+karakterler(21) = "&"
+karakterler(22) = "t"
+karakterler(23) = "7"
+karakterler(24) = "j"
+karakterler(25) = "H"
+For i = 1 To 8                                   '' 8 basamalklý þifre
+Randomize
+sifre = sifre & karakterler(Int(Rnd() * 25))
+Next i
+turet = sifre
+End Function
+
+Private Sub Command1_Click()
+Text1.Text = turet
+End Sub
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+((OPTÝON KUTUCUÐU))
+
+(ekrana adý soyadý , domein giren adamýn domein tipi seçer ve ona göre bir uzantý gelir)
+
+Dim sonek As String
+Private Sub Command1_Click()
+If Option1.Value = True Then sonek = ".edu.tr"
+If Option2.Value = True Then sonek = ".com.tr"
+If Option3.Value = True Then sonek = ".mil.tr"
+If Option4.Value = True Then sonek = ".gov.tr"
+If Option5.Value = True Then sonek = ".org.tr"
+Text4 = LCase(Trim(Text1)) & LCase(Trim(Text2)) & "@" & LCase(Trim(Text3)) & sonek  ''lcase çünkü  domain hesaparý küçük harf olurdu.
+End Sub
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+

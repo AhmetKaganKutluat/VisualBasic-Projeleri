@@ -1,0 +1,19 @@
+c:\users\mehmet\Desktop\uygulama13\uygulama13\bin\Debug\uygulama13.exe.config
+c:\users\mehmet\Desktop\uygulama13\uygulama13\bin\Debug\uygulama13.exe
+c:\users\mehmet\Desktop\uygulama13\uygulama13\bin\Debug\uygulama13.pdb
+c:\users\mehmet\Desktop\uygulama13\uygulama13\bin\Debug\uygulama13.xml
+c:\users\mehmet\Desktop\uygulama13\uygulama13\obj\Debug\uygulama13.Form1.resources
+c:\users\mehmet\Desktop\uygulama13\uygulama13\obj\Debug\uygulama13.Resources.resources
+c:\users\mehmet\Desktop\uygulama13\uygulama13\obj\Debug\uygulama13.vbproj.GenerateResource.Cache
+c:\users\mehmet\Desktop\uygulama13\uygulama13\obj\Debug\uygulama13.exe
+c:\users\mehmet\Desktop\uygulama13\uygulama13\obj\Debug\uygulama13.xml
+c:\users\mehmet\Desktop\uygulama13\uygulama13\obj\Debug\uygulama13.pdb
+c:\users\mehmet\Desktop\uygulama13\uygulama13\obj\Debug\uygulama13.Form2.resources
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\Uygulamalar\VİSUALBASICÇALIŞ\VİSUAL STUDİO DA YAPILMIŞ HALİ\13.hafta\uygulama1\uygulama13\bin\Debug\uygulama13.exe.config
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\Uygulamalar\VİSUALBASICÇALIŞ\VİSUAL STUDİO DA YAPILMIŞ HALİ\13.hafta\uygulama1\uygulama13\obj\Debug\uygulama13.exe
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\Uygulamalar\VİSUALBASICÇALIŞ\VİSUAL STUDİO DA YAPILMIŞ HALİ\13.hafta\uygulama1\uygulama13\obj\Debug\uygulama13.xml
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\Uygulamalar\VİSUALBASICÇALIŞ\VİSUAL STUDİO DA YAPILMIŞ HALİ\13.hafta\uygulama1\uygulama13\obj\Debug\uygulama13.pdb
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\13.hafta\uygulama1\uygulama13\bin\Debug\uygulama13.exe.config
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\13.hafta\uygulama1\uygulama13\obj\Debug\uygulama13.exe
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\13.hafta\uygulama1\uygulama13\obj\Debug\uygulama13.xml
+C:\Users\MEHMET\Desktop\GÖRSEL PROGRAM\1.DÖNEM\Uygulamalar\VİSUAL STUDİO DA YAPILMIŞ HALİ\13.hafta\uygulama1\uygulama13\obj\Debug\uygulama13.pdb
